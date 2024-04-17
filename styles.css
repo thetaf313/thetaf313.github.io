@@ -17,29 +17,84 @@ body {
     line-height: 1.6;
 }
 
+/* Nav bar Section */
+
+/* Style the top navigation bar */
+nav {
+    width: 100vw;
+    height: 75px;
+    padding: 20px;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+  
+/* Style the navigation bar links */
+nav a {
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+/* Change color on hover */
+nav a:hover {
+    color: gold;
+    background-color: black;
+}
+
+nav a:active {
+    color: goldenrod;
+}
+
 h1 {
     text-align: center;
     font-size: 1.5rem;
     padding: 20px 0;
 }
 
-.container, .row {
-    width: 90%;
-    margin: 15px auto;
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.row {
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .box {
+    align-content: center;
+    height: 100px;
+    color: #333;
+    text-align: center;
     border: 1px solid #000;
     padding: 20px 10px;
     font-size: 1.2rem;
 }
 
+.box1 {
+    flex: 2;
+    background-color: darkorchid;
+}
+
+.box3 {
+    flex: 4;
+    background-color: darkturquoise;
+}
+
+
 .col {
-    width: 200px;
     max-width: 300px;
     height: 200px;
 }
@@ -47,5 +102,4 @@ h1 {
 .col  img {
     width: 100%;
     height: auto;
-
 }
